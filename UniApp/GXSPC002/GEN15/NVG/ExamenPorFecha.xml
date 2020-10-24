@@ -1,0 +1,133 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_1-129648</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>43</ObjId>
+<ObjName>ExamenPorFecha</ObjName>
+<ObjDesc>Examen Por Fecha</ObjDesc>
+<ObjPgmName>ExamenPorFecha</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules>
+<Action>
+<ActionType>DynamicLoad</ActionType>
+<DynamicLoad>
+<ControlName>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>ExamenFecha</AttriName>
+<Description>Examen Fecha</Description></Attribute></ControlName>
+<CodeAttributes>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>ExamenFecha</AttriName>
+<Description>Examen Fecha</Description></Attribute></CodeAttributes>
+<DescriptionAttributes>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>ExamenFecha</AttriName>
+<Description>Examen Fecha</Description></Attribute></DescriptionAttributes>
+<Navigation>
+<NavigationTree>
+<Table>
+<TableId>7</TableId>
+<TableName>Examen</TableName>
+<Description>Examen</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ExamenId</AttriName>
+<Description>Examen Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>ExamenFecha</AttriName>
+<Description>Examen Fecha</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>ExamenFecha</AttriName>
+<Description>Examen Fecha</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<NavigationConditions></NavigationConditions>
+<NavigationOrder>
+<Order>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>ExamenFecha</AttriName>
+<Description>Examen Fecha</Description></Attribute></Order>
+<Condition></Condition></NavigationOrder></Navigation></DynamicLoad></Action></StandAloneRules>
+<Event>
+<EventName>'Buscar'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>15</ObjId>
+<ObjName>Examenes</ObjName>
+<ObjPgmName>Examenes</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Parameters>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>ExamenFecha</AttriName>
+<Description>Examen Fecha</Description></Attribute></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>7</TableId>
+<TableName>Examen</TableName>
+<Description>Examen</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ExamenId</AttriName>
+<Description>Examen Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IEXAMEN</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>7</TableId>
+<TableName>Examen</TableName>
+<Description>Examen</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ExamenId</AttriName>
+<Description>Examen Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>ExamenFecha</AttriName>
+<Description>Examen Fecha</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

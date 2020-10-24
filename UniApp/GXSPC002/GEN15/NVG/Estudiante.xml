@@ -1,0 +1,168 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_1-129648</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>7</ObjId>
+<ObjName>Estudiante</ObjName>
+<ObjDesc>Estudiante</ObjDesc>
+<ObjPgmName>Estudiante</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Estudianteid</VarId>
+<VarName>&amp;EstudianteId</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>5</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>EstudianteId</AttriName>
+<Description>Estudiante Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>2</TableId>
+<TableName>Carrera</TableName>
+<Description>Carrera</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>CarreraId</AttriName>
+<Description>Carrera Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>5</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>EstudianteId</AttriName>
+<Description>Estudiante Id</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>EstudianteNombre</AttriName>
+<Description>Estudiante Nombre</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>EstudianteFoto</AttriName>
+<Description>Estudiante Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>EstudianteFoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>EstudianteIngreso</AttriName>
+<Description>Estudiante Ingreso</Description></Attribute>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>CarreraId</AttriName>
+<Description>Carrera Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>5</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>EstudianteNombre</AttriName>
+<Description>Estudiante Nombre</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>EstudianteFoto</AttriName>
+<Description>Estudiante Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>EstudianteFoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>EstudianteIngreso</AttriName>
+<Description>Estudiante Ingreso</Description></Attribute>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>CarreraId</AttriName>
+<Description>Carrera Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>5</TableId>
+<TableName>Estudiante</TableName>
+<Description>Estudiante</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>9</TableId>
+<TableName>ExamenEstudiiante</TableName>
+<Description>Estudiiante</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>EstudianteId</AttriName>
+<Description>Estudiante Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>2</TableId>
+<TableName>Carrera</TableName>
+<Description>Carrera</Description></Table>
+<ProgramName>
+<Token>Gx0020</Token></ProgramName>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>CarreraId</AttriName>
+<Description>Carrera Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>

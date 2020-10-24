@@ -1,0 +1,219 @@
+
+<ReorgSpec>
+<SpecVersion>16_0_1-129648</SpecVersion>
+<Table>
+<TableId>8</TableId>
+<TableName>CarreraAsignatura</TableName>
+<Description>Asignatura</Description></Table>
+<ReorgCls>c</ReorgCls>
+<ReorgCode>pk</ReorgCode>
+<ReorgMsg>CarreraAsignatura needs conversion</ReorgMsg>
+<ReorgAction>#</ReorgAction>
+<TableAttributes>
+<AttrisInTable>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>CarreraId</AttriName>
+<Description>Carrera Id</Description>
+<TakesValueFrom>
+<Table>
+<TableId>8</TableId>
+<TableName>CarreraAsignatura</TableName>
+<Description>Asignatura</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>CarreraId</AttriName>
+<Description>Carrera Id</Description></Attribute></FromValue></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description>
+<TakesValueFrom>
+<Table>
+<TableId>8</TableId>
+<TableName>CarreraAsignatura</TableName>
+<Description>Asignatura</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute></FromValue></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description>
+<TakesValueFrom>
+<Table>
+<TableId>3</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>C</DataType>
+<Presicion>20</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>NLS</Name>
+<Value>No</Value></Property></Properties></AttriType>
+<AttriChangeType>nv</AttriChangeType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable></AttrisNoLongerInTable>
+<AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<NavigationTree>
+<Table>
+<TableId>8</TableId>
+<TableName>CarreraAsignatura</TableName>
+<Description>Asignatura</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>CarreraId</AttriName>
+<Description>Carrera Id</Description></Attribute>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<TableIndices>
+<Indices>
+<Index>
+<IndexName>ICARRERAASIGNATURA</IndexName>
+<IndexType>u</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>CarreraId</AttriName>
+<Description>Carrera Id</Description></Attribute>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>Yes</Clustered></Index></Indices>
+<NewIndices>
+<Index>
+<IndexName>ICARRERAASIGNATURA1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></NewIndices>
+<IndicesToDelete>
+<Index>
+<IndexName>ICARRERAASIGNATURA1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></IndicesToDelete></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>2</TableId>
+<TableName>Carrera</TableName>
+<Description>Carrera</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>CarreraId</AttriName>
+<Description>Carrera Id</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>new</ChangeType>
+<Table>
+<TableId>10</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>rmv</ChangeType>
+<Table>
+<TableId>3</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Statements>
+<Statement>ALTER TABLE [CarreraAsignatura] ADD [AsignaturaNombre]  char(20) NOT NULL CONSTRAINT AsignaturaNombreCarreraAsignatura_DEFAULT DEFAULT ''</Statement>
+<Statement>UPDATE [CarreraAsignatura] SET [AsignaturaNombre]=T.[AsignaturaNombre] FROM (SELECT T1.[CarreraId], T1.[AsignaturaId], T2.[AsignaturaNombre] FROM ([CarreraAsignatura] T1 INNER JOIN [Asignatura] T2 ON T2.[AsignaturaId] = T1.[AsignaturaId])) T WHERE [CarreraAsignatura].CarreraId= T.CarreraId AND [CarreraAsignatura].AsignaturaId= T.AsignaturaId</Statement>
+<Statement>ALTER TABLE [CarreraAsignatura] DROP CONSTRAINT AsignaturaNombreCarreraAsignatura_DEFAULT</Statement>
+<Statement>DROP INDEX [ICARRERAASIGNATURA1] ON [CarreraAsignatura]</Statement>
+<Statement>CREATE NONCLUSTERED INDEX [ICARRERAASIGNATURA1] ON [CarreraAsignatura] ([AsignaturaId] ,[AsignaturaNombre] )</Statement>
+<Statement>ALTER TABLE [CarreraAsignatura] ADD CONSTRAINT [ICARRERAASIGNATURA2] FOREIGN KEY ([CarreraId]) REFERENCES [Carrera] ([CarreraId])</Statement>
+<Statement>ALTER TABLE [CarreraAsignatura] ADD CONSTRAINT [ICARRERAASIGNATURA1] FOREIGN KEY ([AsignaturaId], [AsignaturaNombre]) REFERENCES [Asignatura] ([AsignaturaId], [AsignaturaNombre])</Statement></Statements>
+<NeedReorganizationProgram>False</NeedReorganizationProgram>
+<Warnings></Warnings>
+<Errors></Errors></ReorgSpec>

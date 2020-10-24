@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="ba42e094-0eb4-4f64-8574-b2507a964e32">
+  <Table name="Estudiante" />
+  <Table name="Examen" />
+  <Table name="ExamenEstudiiante" />
+</Dependencies>

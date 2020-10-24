@@ -1,0 +1,19 @@
+ALTER TABLE [Docente] ADD [AsignaturaNombre]  char(20) NOT NULL CONSTRAINT AsignaturaNombreDocente_DEFAULT DEFAULT ''
+UPDATE [Docente] SET [AsignaturaNombre]=T.[AsignaturaNombre] FROM (SELECT T1.[DocenteId], T2.[AsignaturaNombre] FROM ([Docente] T1 INNER JOIN [Asignatura] T2 ON T2.[AsignaturaId] = T1.[AsignaturaId])) T WHERE [Docente].DocenteId= T.DocenteId
+ALTER TABLE [Docente] DROP CONSTRAINT AsignaturaNombreDocente_DEFAULT
+DROP INDEX [IDOCENTE1] ON [Docente]
+CREATE NONCLUSTERED INDEX [IDOCENTE1] ON [Docente] ([AsignaturaId] ,[AsignaturaNombre] )
+ALTER TABLE [Docente] DROP CONSTRAINT [IDOCENTE1]
+
+ALTER TABLE [CarreraAsignatura] ADD [AsignaturaNombre]  char(20) NOT NULL CONSTRAINT AsignaturaNombreCarreraAsignatura_DEFAULT DEFAULT ''
+UPDATE [CarreraAsignatura] SET [AsignaturaNombre]=T.[AsignaturaNombre] FROM (SELECT T1.[CarreraId], T1.[AsignaturaId], T2.[AsignaturaNombre] FROM ([CarreraAsignatura] T1 INNER JOIN [Asignatura] T2 ON T2.[AsignaturaId] = T1.[AsignaturaId])) T WHERE [CarreraAsignatura].CarreraId= T.CarreraId AND [CarreraAsignatura].AsignaturaId= T.AsignaturaId
+ALTER TABLE [CarreraAsignatura] DROP CONSTRAINT AsignaturaNombreCarreraAsignatura_DEFAULT
+DROP INDEX [ICARRERAASIGNATURA1] ON [CarreraAsignatura]
+CREATE NONCLUSTERED INDEX [ICARRERAASIGNATURA1] ON [CarreraAsignatura] ([AsignaturaId] ,[AsignaturaNombre] )
+ALTER TABLE [CarreraAsignatura] DROP CONSTRAINT [ICARRERAASIGNATURA1]
+
+
+ALTER TABLE [CarreraAsignatura] ADD CONSTRAINT [ICARRERAASIGNATURA1] FOREIGN KEY ([AsignaturaId], [AsignaturaNombre]) REFERENCES [Asignatura] ([AsignaturaId], [AsignaturaNombre])
+
+ALTER TABLE [Docente] ADD CONSTRAINT [IDOCENTE1] FOREIGN KEY ([AsignaturaId], [AsignaturaNombre]) REFERENCES [Asignatura] ([AsignaturaId], [AsignaturaNombre])
+

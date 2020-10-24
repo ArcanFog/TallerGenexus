@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="16265062-d55b-489b-8442-e1153bd6651f">
+  <Table name="Carrera" />
+  <Table name="Estudiante" />
+  <Table name="Certificado" />
+  <Table name="Examen" />
+  <Table name="CarreraAsignatura" />
+  <Table name="ExamenEstudiiante" />
+</Dependencies>

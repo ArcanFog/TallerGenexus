@@ -1,0 +1,199 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_1-129648</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>11</ObjId>
+<ObjName>AsignaturaGeneral</ObjName>
+<ObjDesc>Asignatura General</ObjDesc>
+<ObjPgmName>AsignaturaGeneral</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute></Parameter>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>8</ObjId>
+<ObjName>NotAuthorized</ObjName>
+<ObjPgmName>NotAuthorized</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters>
+<Variable>
+<VarId>Pgmname</VarId>
+<VarName>&amp;Pgmname</VarName></Variable></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName>
+<LoadMethod>Auto</LoadMethod>
+<ImplicitForEach>
+<LevelType>For First</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>10</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IASIGNATURA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>@AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute></Condition>
+<Condition>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>@AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>@AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute></Condition>
+<Condition>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>@AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>10</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Event>
+<EventName>'DoUpdate'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>Asignatura</ObjName>
+<ObjPgmName>Asignatura</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Parameters>
+<Token>TrnMode</Token>
+<Token>.Update</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Token>,</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'DoDelete'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>Asignatura</ObjName>
+<ObjPgmName>Asignatura</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Parameters>
+<Token>TrnMode</Token>
+<Token>.Delete</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Token>,</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'PREPARETRANSACTION'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Suggests></Suggests></ObjectSpec>

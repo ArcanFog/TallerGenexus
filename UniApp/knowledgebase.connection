@@ -1,0 +1,10 @@
+﻿<ConnectionInformation>
+	<DBName>GX_KB_UniApp</DBName>
+	<IntegratedSecurity>True</IntegratedSecurity>
+	<ServerInstance>DESKTOP-HCADFS3\SQLEXPRESS2017</ServerInstance>
+	<CreateDbInKbFolder>True</CreateDbInKbFolder>
+	<Directory>C:\Models\UniApp</Directory>
+	<DataFile>GX_KB_UniApp.mdf</DataFile>
+	<LogFile>GX_KB_UniApp_log.ldf</LogFile>
+	<HostName>DESKTOP-HCADFS3</HostName>
+</ConnectionInformation>

@@ -1,0 +1,418 @@
+spec_i([ proc,15,'Examenes','Examenes',78,eng,'16_0_1-129648' ]).
+ 
+struct_i(2,1,[ 26,8,10,15,11,18,9 ],[]).
+struct_i(3,2,[ 17 ],[]).
+ 
+level_i(2,[ 7,[ [ 7,many ] ],[],[],[ [ [ 7 ],[ 26,17 ] ] ],[ [ [ 7 ],[] ] ],[ 17 ],'IEXAMEN',[],[] ]).
+level_i(3,[ 9,[ [ 9,many ],[ 5,one ] ],[],[],[ [ [ 9,5 ],[ 17,18,15 ] ] ],[ [ [ 9,5 ],[] ] ],[ 17 ],'IEXAMENESTUDIIANTE',[ 9,[ [ [],17,17 ] ] ],[] ]).
+ 
+tw_i(2,[]).
+tw_i(3,[ [ 5,[ [ 9,15,15 ] ] ] ]).
+ 
+lwi_i(2,[ [ c([ t(26,2),t(=,10),t(26,23) ],[ 26 ]) ] ]).
+lwi_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 7,26 ],[ 7,17 ] ] ]).
+ta_i(3,[ [ [ 9,17 ],[ 5,18 ],[ 9,15 ] ] ]).
+ 
+las_i(2,[ [ 26,17 ] ]).
+las_i(3,[ [ 17,18,15 ] ]).
+ 
+lac_i(2,[ [] ]).
+lac_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-HCADFS3\SQLEXPRESS2017')).
+rule_i(0,datastore(1,'CC_DBNAME','UniApp')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-HCADFS3\SQLEXPRESS2017')).
+rule_i(0,datastore(1,'CS_DBNAME','UniApp')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','Examenes')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('GENERATE_ILE','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('AppGenerator','1')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Unsecure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','HTTP')).
+rule_i(0,prop('IsMain','-1')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','Examenes')).
+rule_i(0,prop('ObjName','Examenes')).
+rule_i(0,maingen(15)).
+rule_i(0,prop('PGMTYPE',main)).
+rule_i(0,output_file(t('ExamenLista',3),t('Pdf',3))).
+rule_i(0,parm([ 26 ],[ 26 ])).
+rule_i(0,parmio([ [ 26,in ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Line',[],[ [],[ t(0,3) ] ]).
+a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(3,3,t,9,[],[ [ [ [],17,17 ] ],'IEXAMENESTUDIIANTE',[] ]).
+a_i(4,3,r,5,[],[ [ [ 9,15,15 ] ],'IESTUDIANTE',[] ]).
+a_i(5,2,t,7,[],[ [],'IEXAMEN',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Line').
+v_i(f,i,2,[]).
+v_i(f,o,2,'Err').
+v_i(t,i,3,17).
+v_i(t,o,3,15).
+v_i(r,i,4,15).
+v_i(r,o,4,18).
+v_i(t,i,5,[]).
+v_i(t,o,5,26).
+v_i(t,o,5,17).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',8 ]).
+attri_i(17,[ 'ExamenId',int,4,0,'ZZZ9',0,'Examen Id','',0 ]).
+attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',7 ]).
+attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',6 ]).
+attri_i(11,[ 'AsignaturaNombre',char,20,0,'',0,'Asignatura Nombre','',0 ]).
+attri_i(9,[ 'CarreraNombre',char,20,0,'',0,'Carrera Nombre','',0 ]).
+attri_i(10,[ 'AsignaturaId',int,4,0,'ZZZ9',0,'Asignatura Id','',0 ]).
+attri_i(8,[ 'CarreraId',int,4,0,'ZZZ9',0,'Carrera Id','',0 ]).
+attri_i(26,[ 'ExamenFecha',date,8,0,'99/99/99',0,'Examen Fecha','',0 ]).
+attri_i(18,[ 'EstudianteNombre',char,20,0,'',0,'Estudiante Nombre','',0 ]).
+attri_i(15,[ 'EstudianteId',int,4,0,'ZZZ9',0,'Estudiante Id','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',3 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',2 ]).
+ 
+table_i(5,[ 'Estudiante',[ 15,18 ],'Estudiante','Estudiante' ]).
+table_i(9,[ 'ExamenEstudiiante',[ 17,15 ],'Estudiiante','ExamenEstudiiante' ]).
+table_i(7,[ 'Examen',[ 17,26 ],'Examen','Examen' ]).
+ 
+index_i(9,[ 'IEXAMENESTUDIIANTE',u,[ 17,15 ],'IExamenEstudiiante' ]).
+index_i(5,[ 'IESTUDIANTE',u,[ 15 ],'IEstudiante' ]).
+index_i(7,[ 'IEXAMEN',u,[ 17 ],'IExamen' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+add_att_i(bits,2,40000,19,'EstudianteFoto_GXI',[ svchar,2048,0,0 ]).
+ 
+ 
+ 
+ 
+start_i(3,0,0,[ [ [ 17,2,17,= ] ],many ]).
+ 
+end_i(3,0,0,[ [ [ t(17,2),t(=,10),t(17,23) ] ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(3,nvg,2,[],[ [ 15,18 ],[],[] ]).
+break_i(2,nvg,1,[],[ [ 26,8,10,15,9,11,18 ],[],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,nvg,2,1,1).
+b_group_i(2,1,lit,0,2,15).
+b_group_i(2,2,nvg,3,3,3).
+b_group_i(3,1,lit,0,16,22).
+b_group_i(2,3,lit,0,23,23).
+b_group_i(1,3,lit,0,24,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,2,1,cmd,2,[ t('',121,1,0),t(table,3,1,10),t(7,3,1,10) ]).
+b_line_i(2,2,1,pb,2,[ t('Examendatos',29,2,8) ]).
+b_line_i([ 2,0 ],2,1,line,2,[ t(' ',3,0,0) ]).
+b_line_i([ 2,1 ],2,1,line,3,[ t('Lista de examenes y estudiantes.',3,1,38) ]).
+b_line_i([ 2,4 ],2,1,line,6,[ t(26,2,4,15),t(26,2,4,71) ]).
+b_line_i([ 2,6 ],2,1,line,8,[ t(8,2,6,13),t(9,2,6,69) ]).
+b_line_i([ 2,8 ],2,1,line,10,[ t(10,2,8,13),t(11,2,8,70) ]).
+b_line_i([ 2,11 ],2,1,line,13,[ t(15,2,11,13),t(18,2,11,69) ]).
+b_line_i([ 2,12 ],2,1,line,14,[ t(' ',3,12,0) ]).
+b_line_i(3,3,1,cmd,16,[ t('',121,3,0),t(table,3,3,11),t(9,3,3,11) ]).
+b_line_i(4,3,1,pb,16,[ t('Examenlista',29,16,9) ]).
+b_line_i([ 4,0 ],3,1,line,16,[ t(' ',3,0,0) ]).
+b_line_i([ 4,1 ],3,1,line,17,[ t(15,2,1,11),t(18,2,1,71) ]).
+b_line_i([ 4,5 ],3,1,line,21,[ t(' ',3,5,0) ]).
+b_line_i(5,3,1,cmd,22,[ t('',128,22,0) ]).
+b_line_i(6,2,3,cmd,23,[ t('',128,23,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+warn_gen_i(msg([],spc0051,[ 'Supertype ',att(2,8),' cannot be instantiated. Use subtype ',att(2,22),' instead',[ ' in group starting at line ','1','' ],'.' ])).
+warn_gen_i(msg([],spc0051,[ 'Supertype ',att(2,10),' cannot be instantiated. Use subtype ',att(2,24),' instead',[ ' in group starting at line ','1','' ],'.' ])).
+warn_gen_i(msg([],spc0043,[ '',att(2,15),' is not instantiated',[ ' in group starting at line ','1','' ],'.' ])).
+warn_gen_i(msg([],spc0051,[ 'Supertype ',att(2,11),' cannot be instantiated. Use subtype ',att(2,25),' instead',[ ' in group starting at line ','1','' ],'.' ])).
+warn_gen_i(msg([],spc0043,[ '',att(2,18),' is not instantiated',[ ' in group starting at line ','1','' ],'.' ])).
+warn_gen_i(msg([],spc0051,[ 'Supertype ',att(2,9),' cannot be instantiated. Use subtype ',att(2,23),' instead',[ ' in group starting at line ','1','' ],'.' ])).
+ 
+lit_i(11,2,t('Lista de examenes y estudiantes.',3),[ font('Microsoft Sans Serif',8,[]),rect(267,17,467,31),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel1'),gxcolor([]) ]).
+lit_i(12,2,t(26,2),[ font('Microsoft Sans Serif',8,[]),rect(108,67,157,82),outstyle(none),align(right),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('26'),ctrltype(edit,12),ispwd(0),gxcolor([]) ]).
+lit_i(13,2,t(8,2),[ font('Microsoft Sans Serif',8,[]),rect(92,100,159,115),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('8'),ctrltype(edit,13),ispwd(0),gxcolor([]) ]).
+lit_i(14,2,t(10,2),[ font('Microsoft Sans Serif',8,[]),rect(92,133,167,148),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('10'),ctrltype(edit,14),ispwd(0),gxcolor([]) ]).
+lit_i(15,2,t(15,2),[ font('Microsoft Sans Serif',8,[]),rect(92,167,167,182),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('15'),ctrltype(edit,15),ispwd(0),gxcolor([]) ]).
+lit_i(16,2,t(26,2),[ font('Microsoft Sans Serif',8,[]),rect(500,67,549,82),outstyle(none),align(right),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('26'),ctrltype(edit,16),ispwd(0),gxcolor([]) ]).
+lit_i(17,2,t(9,2),[ font('Microsoft Sans Serif',8,[]),rect(483,100,588,115),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('9'),ctrltype(edit,17),ispwd(0),gxcolor([]) ]).
+lit_i(18,2,t(11,2),[ font('Microsoft Sans Serif',8,[]),rect(492,133,597,148),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('11'),ctrltype(edit,18),ispwd(0),gxcolor([]) ]).
+lit_i(19,2,t(18,2),[ font('Microsoft Sans Serif',8,[]),rect(483,167,588,182),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('18'),ctrltype(edit,19),ispwd(0),gxcolor([]) ]).
+lit_i(1,2,window,[ title('Text'),rect(0,0,827,205),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Examendatos'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(20,4,t(15,2),[ font('Microsoft Sans Serif',8,[]),rect(83,17,175,32),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('15'),ctrltype(edit,20),ispwd(0),gxcolor([]) ]).
+lit_i(21,4,t(18,2),[ font('Microsoft Sans Serif',8,[]),rect(500,17,605,32),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('18'),ctrltype(edit,21),ispwd(0),gxcolor([]) ]).
+lit_i(10,4,window,[ title('Text'),rect(0,0,827,100),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Examenlista'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(1,15).
+ 
+att_prop_i(2,15,'ExternalName','EstudianteId',d).
+att_prop_i(2,15,'ExternalNamespace','UniApp',d).
+att_prop_i(2,15,'EmptyAsNull','Yes',d).
+att_prop_i(2,15,idBasedOn,'',d).
+att_prop_i(2,15,'AUTONUMBER','0',d).
+att_prop_i(2,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,15,'AttRegEx','',d).
+att_prop_i(2,15,'AttValidationFailedMsg','',d).
+att_prop_i(2,15,'FullName','EstudianteId',v).
+att_prop_i(2,18,'ExternalName','EstudianteNombre',d).
+att_prop_i(2,18,'ExternalNamespace','UniApp',d).
+att_prop_i(2,18,'EmptyAsNull','Yes',d).
+att_prop_i(2,18,idBasedOn,'',d).
+att_prop_i(2,18,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,18,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,18,'AttRegEx','',d).
+att_prop_i(2,18,'AttValidationFailedMsg','',d).
+att_prop_i(2,18,'FullName','EstudianteNombre',v).
+att_prop_i(2,26,'ExternalName','ExamenFecha',d).
+att_prop_i(2,26,'ExternalNamespace','UniApp',d).
+att_prop_i(2,26,'EmptyAsNull','Yes',d).
+att_prop_i(2,26,idBasedOn,'',d).
+att_prop_i(2,26,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,26,'AttRegEx','',d).
+att_prop_i(2,26,'AttValidationFailedMsg','',d).
+att_prop_i(2,26,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,26,'FullName','ExamenFecha',v).
+att_prop_i(2,8,'ExternalName','CarreraId',d).
+att_prop_i(2,8,'ExternalNamespace','UniApp',d).
+att_prop_i(2,8,'EmptyAsNull','Yes',d).
+att_prop_i(2,8,idBasedOn,'',d).
+att_prop_i(2,8,'AUTONUMBER','-1',v).
+att_prop_i(2,8,'AUTONUMBER_START','1',d).
+att_prop_i(2,8,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,8,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,8,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,8,'AttRegEx','',d).
+att_prop_i(2,8,'AttValidationFailedMsg','',d).
+att_prop_i(2,8,'FullName','CarreraId',v).
+att_prop_i(2,10,'ExternalName','AsignaturaId',d).
+att_prop_i(2,10,'ExternalNamespace','UniApp',d).
+att_prop_i(2,10,'EmptyAsNull','Yes',d).
+att_prop_i(2,10,idBasedOn,'',d).
+att_prop_i(2,10,'AUTONUMBER','-1',v).
+att_prop_i(2,10,'AUTONUMBER_START','1',d).
+att_prop_i(2,10,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,10,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,10,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,10,'AttRegEx','',d).
+att_prop_i(2,10,'AttValidationFailedMsg','',d).
+att_prop_i(2,10,'FullName','AsignaturaId',v).
+att_prop_i(2,9,'ExternalName','CarreraNombre',d).
+att_prop_i(2,9,'ExternalNamespace','UniApp',d).
+att_prop_i(2,9,'EmptyAsNull','Yes',d).
+att_prop_i(2,9,idBasedOn,'',d).
+att_prop_i(2,9,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,9,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,9,'AttRegEx','',d).
+att_prop_i(2,9,'AttValidationFailedMsg','',d).
+att_prop_i(2,9,'FullName','CarreraNombre',v).
+att_prop_i(2,11,'ExternalName','AsignaturaNombre',d).
+att_prop_i(2,11,'ExternalNamespace','UniApp',d).
+att_prop_i(2,11,'EmptyAsNull','Yes',d).
+att_prop_i(2,11,idBasedOn,'',d).
+att_prop_i(2,11,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,11,'DB_NLS_SUPPORT','No',d).
+att_prop_i(2,11,'AttRegEx','',d).
+att_prop_i(2,11,'AttValidationFailedMsg','',d).
+att_prop_i(2,11,'FullName','AsignaturaNombre',v).
+att_prop_i(2,17,'ExternalName','ExamenId',d).
+att_prop_i(2,17,'ExternalNamespace','UniApp',d).
+att_prop_i(2,17,'EmptyAsNull','Yes',d).
+att_prop_i(2,17,idBasedOn,'',d).
+att_prop_i(2,17,'AUTONUMBER','0',d).
+att_prop_i(2,17,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,17,'AttRegEx','',d).
+att_prop_i(2,17,'AttValidationFailedMsg','',d).
+att_prop_i(2,17,'FullName','ExamenId',v).
+ 
+tbl_prop_i(2,9,'AllDirSuper',[ [ 5,[ 15 ] ],[ 7,[ 17 ] ] ],v).
+tbl_prop_i(2,5,'DirSubor',[ [ 9,[ 15 ] ] ],v).
+tbl_prop_i(2,7,'DirSubor',[ [ 9,[ 17 ] ] ],v).
+tbl_prop_i(2,9,'DirSuper',[ [ 5,[ 15 ] ],[ 7,[ 17 ] ] ],v).
+ 
+tbl_att_prop_i(2,9,17,'AllowNulls',n).
+tbl_att_prop_i(2,9,15,'AllowNulls',n).
+tbl_att_prop_i(2,5,15,'AllowNulls',n).
+tbl_att_prop_i(2,5,18,'AllowNulls',n).
+tbl_att_prop_i(2,7,17,'AllowNulls',n).
+tbl_att_prop_i(2,7,26,'AllowNulls',n).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,15,'EXAMENES','HTTP').
+ 
+ 
+pgm_main_info_i(proc,15,'EXAMENES',[ 15,'AEXAMENES','Examenes','','','','HTTP' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

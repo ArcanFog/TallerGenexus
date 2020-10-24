@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies type="guid" guid="b3d8b330-3ce3-416e-ac0f-8102ca116436">
+  <Table name="Carrera" />
+  <Table name="Asignatura" />
+  <Table name="CarreraAsignatura" />
+</Dependencies>

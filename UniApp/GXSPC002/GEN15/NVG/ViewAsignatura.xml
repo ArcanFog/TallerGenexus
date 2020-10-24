@@ -1,0 +1,261 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_1-129648</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>15</ObjId>
+<ObjName>ViewAsignatura</ObjName>
+<ObjDesc>View Asignatura</ObjDesc>
+<ObjPgmName>ViewAsignatura</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Asignaturaid</VarId>
+<VarName>&amp;AsignaturaId</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Asignaturanombre</VarId>
+<VarName>&amp;AsignaturaNombre</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Tabcode</VarId>
+<VarName>&amp;TabCode</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>8</ObjId>
+<ObjName>NotAuthorized</ObjName>
+<ObjPgmName>NotAuthorized</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters>
+<Variable>
+<VarId>Pgmname</VarId>
+<VarName>&amp;Pgmname</VarName></Variable></Parameters>
+<IF></IF></CALL>
+<Level>
+<Optimizations></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>6</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>10</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IASIGNATURA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturaid</VarId>
+<VarName>&amp;AsignaturaId</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturanombre</VarId>
+<VarName>&amp;AsignaturaNombre</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturaid</VarId>
+<VarName>&amp;AsignaturaId</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturanombre</VarId>
+<VarName>&amp;AsignaturaNombre</VarName></Variable></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturaid</VarId>
+<VarName>&amp;AsignaturaId</VarName></Variable>
+<Sp></Sp>
+<Token>and</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturanombre</VarId>
+<VarName>&amp;AsignaturaNombre</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>10</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Event>
+<Event>
+<EventName>Tab.Tabchanged</EventName></Event>
+<Event>
+<EventName>'LOAD TAB'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For First</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>10</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IASIGNATURA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturaid</VarId>
+<VarName>&amp;AsignaturaId</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturanombre</VarId>
+<VarName>&amp;AsignaturaNombre</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturaid</VarId>
+<VarName>&amp;AsignaturaId</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Asignaturanombre</VarId>
+<VarName>&amp;AsignaturaNombre</VarName></Variable></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>10</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

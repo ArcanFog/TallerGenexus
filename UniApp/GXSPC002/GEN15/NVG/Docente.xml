@@ -1,0 +1,166 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_1-129648</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>6</ObjId>
+<ObjName>Docente</ObjName>
+<ObjDesc>Docente</ObjDesc>
+<ObjPgmName>Docente</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Docenteid</VarId>
+<VarName>&amp;DocenteId</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>4</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>4</TableId>
+<TableName>Docente</TableName>
+<Description>Docente</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>4</TableId>
+<TableName>Docente</TableName>
+<Description>Docente</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>DocenteId</AttriName>
+<Description>Docente Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>10</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>Docente</TableName>
+<Description>Docente</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>DocenteId</AttriName>
+<Description>Docente Id</Description></Attribute>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>DocenteNombre</AttriName>
+<Description>Docente Nombre</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>DocenteFoto</AttriName>
+<Description>Docente Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>DocenteFoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>Docente</TableName>
+<Description>Docente</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>DocenteNombre</AttriName>
+<Description>Docente Nombre</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>DocenteFoto</AttriName>
+<Description>Docente Foto</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>DocenteFoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>Docente</TableName>
+<Description>Docente</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>10</TableId>
+<TableName>Asignatura</TableName>
+<Description>Asignatura</Description></Table>
+<ProgramName>
+<Token>Gx00A0</Token></ProgramName>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>AsignaturaId</AttriName>
+<Description>Asignatura Id</Description></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>AsignaturaNombre</AttriName>
+<Description>Asignatura Nombre</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>
